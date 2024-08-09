@@ -6,10 +6,105 @@ package quiz1sistemasg2;
 public class App {
     
 
-    public static void main(String[] args) {
-        
-       
+    public static int calcularValorHora(String tipoVehiculo, int cantidadHoras){
+        try {
 
+            int valorHoras = 0;
+
+                switch (tipoVehiculo){
+                    case "C":
+                        valorHoras = (int)(cantidadHoras * 5000);
+                        break;
+                    case "M":
+                        valorHoras = (int)(cantidadHoras * 3000);
+                        break;
+                    case "B":
+                        valorHoras = (int)(cantidadHoras * 1000);
+                         break;
+            }
+
+            return (int)valorHoras; 
+
+        } catch (Exception e) {
+
+            return -1;
+        }
+
+    }
+
+    public static double calcularDescuento(int valorTotalHoras, int estudiante, int cantidadHoras ){
+        try {
+            
+            double valorDescuento = 0
+
+            if(cantidadHoras > 4) {
+
+                if(cantidadHoras == 5000) {
+ 
+                    ValorDescuento = valorTotalHoras * 0.35;
+ 
+                } else if(cantidadHoras == 3000) {
+ 
+                    valorDescuento = valorTotalHoras * 0.35;
+ 
+                } else if(cantidadHoras == 1000) {
+ 
+                    ValorDescuento = valorTotalHoras * 0.35;
+ 
+                }
+ 
+            }
+ 
+            return (int)valorDescuento;
+ 
+        } catch(Exception e) {
+ 
+            return -1;
+ 
+        }
+}
+ 
+    public static double calcularIva(Double valorIva);{
+        try{
+
+            double valorIva = 0
+        }
+
+
+
+
+
+
+    }
+
+
+
+
+    public static int calcularFactura(valorTotalHoras, valorDescuento){
+
+        try {
+
+            int valorFactura = valorHoras - ValorDescuento + valorIva;
+
+            return (int)valorTotalFactura;
+
+        } catch(Exception  e) {
+
+            return -1;
+
+        }
+    }
+    public static void main(String[] args) {
+        try{
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println
+    
+        
+        
+        }
+    
+        }
     }
 
     /*  Implemente una funcion llamada calcularValorHora que cumpla con las siguientes caracteristicas
@@ -22,8 +117,6 @@ public class App {
     */
     //------------------------------------------------------------------
     
-
-
     //------------------------------------------------------------------
 
     /*  Implemente una funcion llamada calcularDescuento que cumpla con las siguientes caracteristicas
@@ -36,8 +129,6 @@ public class App {
         * Controlar errores retornando -1
     */
     //------------------------------------------------------------------
-    
-
 
     //------------------------------------------------------------------
 
@@ -53,4 +144,4 @@ public class App {
 
 
     //------------------------------------------------------------------
-}
+
